@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DialogDemo</string>
+
+
+    <string name="pickerview_title">请选择客户地址</string>
+    <string name="pickerview_submit">完成</string>
+    <string name="mq_confirm">确定</string>
+    <string name="mq_cancel">取消</string>
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eeeeee"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <com.wxl.uidemo.widget.RadiusImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_test"
+                app:radius="10dp" />
+
+            <com.wxl.uidemo.widget.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_test"
+                app:border_color="#0000ff"
+                app:border_overlay="true"
+                app:border_width="2dp" />
+
+            <com.wxl.uidemo.widget.CommentView
+                android:id="@+id/commentView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="15dp"
+                app:star_backgroud="@drawable/c_star_small_gray"
+                app:star_num="5"
+                app:star_space="3dp"
+                app:star_src="@drawable/c_star_small_orange"
+                app:width_percent="2.5" />
+
+            <com.wxl.uidemo.widget.CommentView
+                android:id="@+id/commentView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="15dp"
+                app:star_backgroud="@drawable/c_star_big_gray"
+                app:star_num="5"
+                app:star_space="3dp"
+                app:star_src="@drawable/c_star_big_orange"
+                app:width_percent="2.7" />
+
+            <com.wxl.uidemo.widget.SelectCommentStarView
+                android:id="@+id/selectCommentStarView"
+                android:layout_width="match_parent"
+                android:layout_height="94dp"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/white"
+                app:star_nomalRes="@drawable/comment_gray_star"
+                app:star_num2="5"
+                app:star_selectRes="@drawable/comment_yellow_star"
+                app:star_space2="14dp" />
+
+            <com.wxl.uidemo.widget.ItemSwitchLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:itemTitle="选项1"
+                app:linVisible="true"
+                app:switchCheck="true" />
+
+            <com.wxl.uidemo.widget.ItemSwitchLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemTitle="选项2"
+                app:linVisible="false"
+                app:switchCheck="false" />
+
+            <com.wxl.uidemo.widget.DrawableTextView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/c_star_big_orange"
+                android:gravity="center_horizontal"
+                android:text="客户评价"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+        <com.wxl.uidemo.widget.DrawLayout
+            android:id="@+id/drawLayout"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+
+            <ImageButton
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_shopcart_bg"
+                android:src="@drawable/ic_shopcart" />
+        </com.wxl.uidemo.widget.DrawLayout>
+    </FrameLayout>
+</layout>

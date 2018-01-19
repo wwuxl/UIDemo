@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="pickerview">
+        <attr name="pickerview_gravity">
+            <enum name="center" value="17"/>
+            <enum name="left" value="3"/>
+            <enum name="right" value="5"/>
+        </attr>
+        <attr name="pickerview_textSize" format="dimension"/>
+        <attr name="pickerview_textColorOut" format="color"/>
+        <attr name="pickerview_textColorCenter" format="color"/>
+        <attr name="pickerview_dividerColor" format="color"/>
+        <attr name="pickerview_lineSpacingMultiplier" format="float"/>
+    </declare-styleable>
+
+    <!--不可点击的五星评价控件-->
+    <declare-styleable name="commentView">
+        <attr name="star_num" format="integer"/>
+        <attr name="width_percent" format="float"/>
+        <attr name="star_space" format="dimension"/>
+        <attr name="star_backgroud" format="reference"/>
+        <attr name="star_src" format="reference"/>
+
+    </declare-styleable>
+
+    <!--可点击的五星评价控件-->
+    <declare-styleable name="SelectCommentStarView">
+        <attr name="star_num2" format="integer" />
+        <attr name="star_space2" format="dimension" />
+        <attr name="star_nomalRes" format="reference" />
+        <attr name="star_selectRes" format="reference" />
+    </declare-styleable>
+
+
+    <!--圆角图片控件-->
+    <declare-styleable name="RadiusImageView">
+        <attr name="radius" format="dimension"/>
+    </declare-styleable>
+
+    <!--选项开关-->
+    <declare-styleable name="ItemSwitchLayout">
+        <attr name="itemTitle" format="string"/>
+        <attr name="switchCheck" format="boolean"/>
+        <attr name="linVisible" format="boolean"/>
+    </declare-styleable>
+
+
+
+</resources>
